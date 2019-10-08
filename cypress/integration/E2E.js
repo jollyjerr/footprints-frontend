@@ -1,8 +1,4 @@
-describe("Unit Testing", () => {
-
-})
-
-describe("E2E", () => {
+describe("End to End testing...", () => {
     describe('Landing Page', () => {
         it('loads without crashing', () => {
             cy.visit('/')
