@@ -1,6 +1,15 @@
 @import './variables.scss';
 .navbar {
-    background-color: $primary;
-    width: 100%;
-    height: max-content;
+    background-color: $positive;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    height: $M;
+    h1 {
+        color: $title;
+        text-shadow: $TSstandard;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
 }
