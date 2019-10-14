@@ -1,4 +1,9 @@
 @import './variables.scss';
 .landing-container {
-    background-color: $primary;
+    padding-top: $M;
+    background-color: $dull;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }

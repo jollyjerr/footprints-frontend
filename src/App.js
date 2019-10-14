@@ -47,7 +47,7 @@ export default class App extends Component {
     return (
       <Router>
 
-        <Navbar />
+        {/* <Navbar /> */}
 
         <Switch>
 
