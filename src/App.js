@@ -10,13 +10,13 @@ import NoMatch from './components/NoMatch'
 
 
 export default class App extends Component {
-  BACKED_URL = "https://localhost:5001/api"
+  BACKED_URL = "http://localhost:5000/api"
   state = {
     user: {},
   }
 
   isloggedIn = () => {
-    if(!Object.keys(this.state.user).length === 0) {
+    if(Object.keys(this.state.user).length !== 0) {
       return true
     }
     let jwt = localStorage.getItem("footprintsJWT")
@@ -47,7 +47,7 @@ export default class App extends Component {
     return (
       <Router>
 
-        {/* <Navbar /> */}
+        <Navbar />
 
         <Switch>
 
