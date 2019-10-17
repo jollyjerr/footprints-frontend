@@ -11,3 +11,9 @@ export default function LandingContainer({logIn}) {
         </div>
     )
 }
+
+const mapDispatchToProps = dispatch => {
+  return {
+    login: () => dispatch({ type: "LOGIN" })
+  };
+};
