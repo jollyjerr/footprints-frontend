@@ -1,14 +1,20 @@
 import React, {useState} from 'react'
 import {connect} from 'react-redux'
 
+import {userActions} from '../actions'
 
-function LoginContainer(props) {
+
+function LoginContainer({logIn}) {
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log(event.target)
+        let user = {
+            name,
+            password
+        }
+        logIn(user)
     }
 
     return (
@@ -24,4 +30,8 @@ function LoginContainer(props) {
     )
 }
 
-export default connect(null, null)(LoginContainer)
+const mapDispatchToProps = (dispatch) = {
+    logIn: (user) => userActions.userRequest(user, 'auth/login', dispatch)
+}
+
+export default connect(null, mapDispatchToProps)(LoginContainer)

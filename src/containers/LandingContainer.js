@@ -15,7 +15,7 @@ function LandingContainer(props) {
 
 const mapDispatchToProps = dispatch => {
   return {
-    login: () => dispatch({ type: "LOGIN" })
+    logIn: () => dispatch({ type: "LOGIN" })
   };
 };
 
