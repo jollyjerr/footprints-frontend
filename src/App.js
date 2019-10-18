@@ -1,6 +1,6 @@
 import './App.scss'
 
-import React from 'react'
+import React, {useEffect} from 'react'
 import {connect} from 'react-redux'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import Navbar from './components/Navbar'
@@ -12,8 +12,10 @@ import { footprintActions } from "./actions";
 
 function App(props) {
   //link this visitors session to a unique bot instance
-  props.setToken() 
-
+  useEffect(() => {
+    props.setToken() 
+  }, [])
+  
   return (
     <Router>
 

@@ -3,7 +3,7 @@
 // export const token = (state = null, action) => {
 //   switch (action.type) {
 //     case AUTHORIZED:
-//         console.log('authorized was triggered')
+//         console.log('Communicated with production server for new socket token')
 //       return action.token;
 //     default:
 //       return state;
