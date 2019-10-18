@@ -1,13 +1,24 @@
 @import './variables.scss';
 .landing-container {
     background-color: $secondary;
-    height: 100%;
+    display: block;
+    // height: calc(100vh - 5rem);
     text-align: center;
-    height: max-content;
     @media (min-width: 400px) {
         display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        height: 100%;
+        height: calc(100vh - 5rem);
+    }
+}
+
+.Footprint {
+    width: 50%;
+}
+
+.login-container {
+    justify-content: center;
+    width: 50%;
+    // text-align: center;
+    input {
+        display: block;
     }
 }

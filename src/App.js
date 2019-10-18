@@ -17,7 +17,7 @@ function App(props) {
   }, [])
   
   return (
-    <Router>
+      <Router>
 
       <Navbar />
 
@@ -34,7 +34,7 @@ function App(props) {
          <Route component={NoMatch} />
       </Switch>
 
-    </Router>
+      </Router>
   )
 }
 

@@ -1,9 +1,17 @@
 @import './styles/variables.scss';
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-html body {
+[data-reactroot] {
+    height: 100% !important;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
     padding: 0;
     margin: 0;
-    height: 100%;
+    min-height: 100vh;
     background-color: $secondary;
     font-family: 'Montserrat', sans-serif;
 }
