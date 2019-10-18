@@ -1,9 +1,12 @@
 @import './variables.scss';
 .landing-container {
-    padding-top: $M;
     background-color: $secondary;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    text-align: center;
+    height: max-content;
+    @media (min-width: 400px) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 }

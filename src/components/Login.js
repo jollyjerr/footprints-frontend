@@ -9,7 +9,7 @@ function Login(props) {
 
   const handleSubmit = event => {
     event.preventDefault();
-    let user = {
+    let user = { 
       name,
       password
     };

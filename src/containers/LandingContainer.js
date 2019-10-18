@@ -8,9 +8,10 @@ import Footprint from '../components/Footprint';
 function LandingContainer() {
     return (
         <div className="landing-container" >
-            <Footprint />
+            <div className="bot" >
+                <Footprint />
+            </div>
             <Login />
-            
         </div>
     )
 }

@@ -1,6 +1,8 @@
 @import './styles/variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 html body {
     padding: 0;
     margin: 0;
     background-color: $secondary;
+    font-family: 'Montserrat', sans-serif;
 }

@@ -27,7 +27,7 @@ export const fetchDirectLineToken = async () => {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer TbNgODk0csQ.BYATPK6dYuFlW2r94H0aUf-O8BowPbJfOmSYcCJXISg"
+            // "Authorization": "Bearer TbNgODk0csQ.BYATPK6dYuFlW2r94H0aUf-O8BowPbJfOmSYcCJXISg" //uncomment this line to interact with production bot
         }
     })
     return await resp.clone().json()

@@ -12,7 +12,7 @@ import { footprintActions } from "./actions";
 
 function App(props) {
   //link this visitors session to a unique bot instance
-  props.setToken()
+  props.setToken() 
 
   return (
     <Router>
