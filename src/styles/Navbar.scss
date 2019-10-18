@@ -3,6 +3,9 @@
     background-color: $positive;
     display: block;
     height: $M;
+    img {
+        width: $M;
+    }
     h1 {
         color: $title;
         text-shadow: $TSstandard;

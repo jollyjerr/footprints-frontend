@@ -1,22 +1,16 @@
 import React from 'react'
 
 import '../styles/landing-container.scss'
-import LoginContainer from './LoginContainer'
+import Login from '../components/Login'
 import { connect } from "react-redux";
 
-function LandingContainer(props) {
+function LandingContainer() {
     return (
         <div className="landing-container" >
-            <LoginContainer {...props} />
+            <Login />
             
         </div>
     )
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    logIn: () => dispatch({ type: "LOGIN" })
-  };
-};
-
-export default connect(null, mapDispatchToProps)(LandingContainer)
+export default connect(null, null)(LandingContainer)
