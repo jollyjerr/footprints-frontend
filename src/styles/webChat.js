@@ -10,14 +10,26 @@ const WEB_CHAT_STYLE = {
   accent: "rgb(88, 135, 251)",
   paddingRegular: 10,
   paddingWide: 20,
+  subtle: "rgb(88, 135, 251)",
+  height: "100%",
 
   //font
-  primaryFont: fontFamily(["Calibri", "Helvetica Neue", "Arial", "sans-serif"]),
+  primaryFont: fontFamily([
+    "Montserrat",
+    "Calibri",
+    "Helvetica Neue",
+    "Arial",
+    "sans-serif"
+  ]),
   fontSizeSmall: "80%",
 
   //avatar
   botAvatarImage: logo,
-  avatarSize: 30
+  botAvatarBackgroundColor: "rgb(40, 150, 68)",
+  avatarSize: 30,
+
+  //root
+  rootHeight: "100%"
 };
 
 export default WEB_CHAT_STYLE;
