@@ -8,7 +8,12 @@ import LandingContainer from './containers/LandingContainer'
 import HomeContainer from './containers/HomeContainer'
 import NoMatch from './components/NoMatch'
 
+import { footprintActions } from "./actions";
+
 function App(props) {
+  //link this visitors session to a unique bot instance
+  props.setToken()
+
   return (
     <Router>
 
@@ -37,5 +42,9 @@ const mapStateToProps = ({user}) => {
   }
 }
 
-export default connect(mapStateToProps, null)(App);
+const mapDispatchToProps = dispatch => ({
+  setToken: () => footprintActions.setToken(dispatch)
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
 

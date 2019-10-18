@@ -21,3 +21,14 @@ export const logIn = (response) => {
     localStorage.setItem("footprintsJWT", response.tokenString)
     return response.userFromRepo
 }
+
+export const fetchDirectLineToken = async () => {
+    const resp = await fetch('https://directline.botframework.com/v3/directLine/tokens/generate', {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer TbNgODk0csQ.BYATPK6dYuFlW2r94H0aUf-O8BowPbJfOmSYcCJXISg"
+        }
+    })
+    return await resp.clone().json()
+}
