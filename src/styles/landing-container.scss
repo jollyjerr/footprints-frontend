@@ -2,23 +2,64 @@
 .landing-container {
     background-color: $secondary;
     display: block;
-    // height: calc(100vh - 5rem);
-    text-align: center;
+    height: calc(100vh - 5rem);
     @media (min-width: 400px) {
         display: flex;
         height: calc(100vh - 5rem);
     }
 }
 
-.Footprint {
-    width: 50%;
+.login-container {
+    display: block;
+    @media (min-width: 400px) {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        font-size: 120%;
+    }
 }
 
-.login-container {
-    justify-content: center;
-    width: 50%;
-    // text-align: center;
-    input {
+.login-form {
+    margin: 10px auto;
+    width: 100%;
+    padding: 20px 12px 10px 20px;
+    box-shadow: 0 0 8px #88D5E9;
+    height: max-content;
+    label {
+        margin: 0 0 3px 0;
+        padding: 0px;
         display: block;
+        font-weight: bold;
+    }
+    input {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border: 1px solid #BEBEBE;
+        padding: 7px;
+        margin: 0px;
+        outline: none;
+    }
+    input:focus {
+        -moz-box-shadow: 0 0 8px #88D5E9;
+        -webkit-box-shadow: 0 0 8px #88D5E9;
+        box-shadow: 0 0 8px #88D5E9;
+        border: 1px solid #88D5E9
+    }
+    button {
+        background: $calm;
+        padding: 8px 15px 8px 15px;
+        border: none;
+        color: #fff;
+    }
+}
+
+.css-10abtoy {
+    width: 50% !important;
+    display: block;
+    // height: 30rem !important;
+    @media (min-width: 400px) {
+        display: flex;
+        height: calc(100vh - 5rem);
     }
 }

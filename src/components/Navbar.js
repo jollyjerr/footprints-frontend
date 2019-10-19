@@ -6,10 +6,11 @@ import logo from '../assets/footprint.png'
 
 export default function Navbar() {
     return (
-        <div className="navbar" >
-            <Link to='/' >
-                <img src={logo} alt="footprint!" />
-            </Link>
-        </div>
-    )
+      <div className="navbar">
+        <Link to="/">
+          <img src={logo} alt="footprint!" />
+        </Link>
+        <h1>footprint</h1>
+      </div>
+    );
 }

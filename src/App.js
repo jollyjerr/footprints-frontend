@@ -14,7 +14,7 @@ function App(props) {
   //link this visitors session to a unique bot instance
   useEffect(() => {
     props.setToken() 
-  }, [])
+  })
   
   return (
       <Router>

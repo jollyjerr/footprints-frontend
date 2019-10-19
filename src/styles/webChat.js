@@ -11,7 +11,6 @@ const WEB_CHAT_STYLE = {
   paddingRegular: 10,
   paddingWide: 20,
   subtle: "rgb(88, 135, 251)",
-  height: "100%",
 
   //font
   primaryFont: fontFamily([

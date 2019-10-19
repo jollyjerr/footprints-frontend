@@ -3,12 +3,13 @@
     background-color: $positive;
     display: block;
     height: $M;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
     img {
         width: $M;
     }
     h1 {
+        display: inline;
         color: $title;
         text-shadow: $TSstandard;
-        margin: 0 auto;
     }
 }
