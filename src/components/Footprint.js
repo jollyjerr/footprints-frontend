@@ -8,7 +8,6 @@ import WEB_CHAT_STYLE from '../styles/webChat';
 
 
 const Footprint = (props) => {
-
     return (
       props.token ? <ReactWebChat directLine={ new DirectLine({ token: props.token }) } styleOptions={WEB_CHAT_STYLE} /> : null 
     );

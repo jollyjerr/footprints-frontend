@@ -2,7 +2,7 @@ import './App.scss'
 
 import React, {useEffect} from 'react'
 import {connect} from 'react-redux'
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import LandingContainer from './containers/LandingContainer'
 import SignUpContainer from './containers/SignUpContainer'
@@ -11,8 +11,7 @@ import NoMatch from './components/NoMatch'
 import { footprintActions } from "./actions";
 
 function App(props) {
-  //link this visitors session to a unique bot instance
-  useEffect(() => {
+  useEffect(() => { //link this visitors session to a unique bot instance
     props.setToken() 
   })
   
@@ -24,7 +23,7 @@ function App(props) {
       <Switch>
 
         <Route exact path="/">
-          {props.user ? <Redirect to="/signup" /> : <LandingContainer/>}
+          <LandingContainer/>
         </Route>
 
         <Route exact path ="/signup">
@@ -38,15 +37,9 @@ function App(props) {
   )
 }
 
-const mapStateToProps = ({user}) => {
-  return {
-    user
-  }
-}
-
 const mapDispatchToProps = dispatch => ({
   setToken: () => footprintActions.setToken(dispatch)
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);
 

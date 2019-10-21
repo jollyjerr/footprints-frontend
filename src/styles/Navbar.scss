@@ -1,7 +1,8 @@
 @import './variables.scss';
 .navbar {
     background-color: $positive;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     height: $M;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
     img {
@@ -11,5 +12,17 @@
         display: inline;
         color: $title;
         text-shadow: $TSstandard;
+    }
+    button {
+        background-color: $calm;
+        color: $title;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        padding: $XS;
+        width: $L;
+        font-family: inherit;
+        font-size: 110%;
+        text-shadow: inherit;
     }
 }
