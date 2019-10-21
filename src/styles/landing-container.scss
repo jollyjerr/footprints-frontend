@@ -26,6 +26,33 @@
         color: $calm;
         margin: 0;
     }
+    .landing-chat-button {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+    }
+    .chat-button {
+        transition-duration: 0.6s;
+        background-color: $positive;
+        color: $title;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        padding: $XS;
+        width: $XL;
+        font-family: inherit;
+        font-size: 110%;
+        text-shadow: inherit;
+        cursor: pointer;
+        outline: none;
+        height: $M;
+    }
+    .chat-button:hover {
+        transition-duration: 0.6s;
+        background-color: $calm;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
 }
 
 .login-container {

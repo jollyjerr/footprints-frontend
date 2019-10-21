@@ -9,6 +9,7 @@ import SignUpContainer from './containers/SignUpContainer'
 import NoMatch from './components/NoMatch'
 
 import { footprintActions } from "./actions";
+import Footprint from './components/Footprint'
 
 function App(props) {
   useEffect(() => { //link this visitors session to a unique bot instance
@@ -28,6 +29,10 @@ function App(props) {
 
         <Route exact path ="/signup">
           <SignUpContainer />
+        </Route>
+
+        <Route exact path ="/chat">
+          <Footprint />
         </Route>
 
          <Route component={NoMatch} />

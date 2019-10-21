@@ -1,0 +1,29 @@
+@import './variables.scss';
+.signup-container {
+    background-image: linear-gradient($positive, $dull);
+    height: calc(100vh - 5rem);
+    justify-content: center;
+    text-shadow: 0.3px 0.5px $dull;
+    // flex-wrap: wrap;
+    @media (min-width: 400px) {
+        // display: flex;
+        height: calc(100vh - 5rem);
+    }
+    h1 {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: max-content;
+        color: $title;
+        font-size: 450%;
+        margin: 0;
+    }
+    h2 {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: max-content;
+        color: $calm;
+        margin: 0;
+    }
+}

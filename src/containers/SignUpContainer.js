@@ -1,10 +1,13 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import Login from '../components/Login'
+
+import '../styles/signup-container.scss'
 
 function SignUpContainer(props) {
     return (
-        <div>
-            Home
+        <div className="signup-container" >
+          
         </div>
     )
 }

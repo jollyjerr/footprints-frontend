@@ -1,8 +1,9 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import '../styles/landing-container.scss'
 import { connect } from "react-redux";
-import Footprint from '../components/Footprint';
+
 
 function LandingContainer() {
     return (
@@ -11,7 +12,11 @@ function LandingContainer() {
             <h2>Fight climate change with a personal assistant.</h2>
             <p>INFO COMP.</p>
             <p>SOME OTHER COMP.</p>
-            {/* <Footprint/> */}
+            <div className="landing-chat-button" >
+                <Link to="/chat" >
+                    <button className="chat-button" >Chat!</button> 
+                </Link>
+            </div>
         </div>
     )
 }
