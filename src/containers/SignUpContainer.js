@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-function HomeContainer(props) {
+function SignUpContainer(props) {
     return (
         <div>
             Home
@@ -15,4 +15,4 @@ const mapStateToProps = ({ user }) => {
   }
 }
 
-export default connect(mapStateToProps, null)(HomeContainer)
+export default connect(mapStateToProps, null)(SignUpContainer)

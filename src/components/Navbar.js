@@ -10,7 +10,6 @@ export default function Navbar() {
         <Link to="/">
           <img src={logo} alt="footprint!" />
         </Link>
-        <h1>footprint</h1>
       </div>
     );
 }
