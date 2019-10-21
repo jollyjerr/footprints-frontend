@@ -13,9 +13,10 @@ const Footprint = (props) => {
     );
 }
 
-const mapStateToProps = ({token}) => {
+const mapStateToProps = ({token, user}) => {
     return {
-        token
+        token,
+        user
     }
 }
 
