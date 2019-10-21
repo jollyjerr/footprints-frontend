@@ -1,6 +1,6 @@
 @import './variables.scss';
 .landing-container {
-    background-color: $secondary;
+    background-image: linear-gradient($positive, $dull);
     display: block;
     height: calc(100vh - 5rem);
     @media (min-width: 400px) {

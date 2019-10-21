@@ -10,7 +10,7 @@ const WEB_CHAT_STYLE = {
   accent: "rgb(88, 135, 251)",
   paddingRegular: 10,
   paddingWide: 20,
-  subtle: "rgb(88, 135, 251)",
+  subtle: "rgb(40, 150, 68)",
 
   //font
   primaryFont: fontFamily([
