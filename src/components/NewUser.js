@@ -37,6 +37,7 @@ function NewUser({next, signUp}) {
           />
           <button type="submit">Create Account</button>
         </form>
+        <button onClick={next}>Debugger NEXT</button>
       </div>
     );
 }

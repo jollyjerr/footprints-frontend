@@ -13,6 +13,23 @@ export const userOptions = (user) => {
     }
 }
 
+export const vehicleOptions = (vehicle, id) => {
+    return {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        make: vehicle.make,
+        model: vehicle.model,
+        year: vehicle.year,
+        fuel: vehicle.fuel,
+        mpg: vehicle.mpg,
+        userid: id
+      })
+    };
+}
+
 export const authHeader = () => {
     return localStorage.getItem("footprintsJWT")
 }
