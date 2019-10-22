@@ -36,6 +36,7 @@ function App(props) {
         </Route>
 
          <Route component={NoMatch} />
+         
       </Switch>
 
       </Router>
