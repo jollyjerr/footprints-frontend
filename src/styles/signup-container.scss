@@ -15,7 +15,7 @@
         width: 100%;
         height: max-content;
         color: $title;
-        font-size: 450%;
+        font-size: 250%;
         margin: 0;
     }
     h2 {
@@ -28,10 +28,41 @@
     }
 }
 
-.form-containter {
-    background-color: pink;
+.form-container {
+    height: 30rem;
 }
 
 .form {
-    background-color: whitesmoke;
+    margin: 10px auto;
+    height: 100%;
+    width: 20rem;
+    padding: 20px 12px 10px 20px;
+    label {
+        margin: 0 0 3px 0;
+        padding: 0px;
+        display: block;
+        color: $title;
+    }
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid $dull;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input:focus {
+        -moz-box-shadow: 0 0 8px $calm;
+        -webkit-box-shadow: 0 0 8px $calm;
+        box-shadow: 0 0 8px $calm;
+        border: 1px solid $calm
+    }
+    button {
+        background: $calm;
+        padding: 8px 15px 8px 15px;
+        border: none;
+        color: $title;
+        cursor: pointer;
+    }
 }

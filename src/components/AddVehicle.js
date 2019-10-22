@@ -34,7 +34,6 @@ function AddVehicle({ next, addVehicle, user }) {
 
   return (
     <div>
-      <h4>Vehicles</h4>
       <form onSubmit={event => handleSubmit(event)} className="form">
         <label htmlFor="make">Make:</label>
         <input

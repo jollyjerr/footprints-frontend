@@ -37,7 +37,6 @@ function AddHouse({next, addHouse, user}) {
 
     return (
       <div>
-        <h4>Houses and other buildings</h4>
         <form onSubmit={event => handleSubmit(event)} className="form">
           <label htmlFor="location">Location:</label>
           <input
