@@ -7,13 +7,13 @@ export const userOptions = (user) => {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            username: user.name,
+            username: user.username,
             password: user.password
         })
     }
 }
 
-export const houseOptions = (house, id) => {
+export const houseOptions = (house) => {
     return {
       method: "POST",
       headers: {
@@ -26,12 +26,12 @@ export const houseOptions = (house, id) => {
         solar: house.solar,
         wind: house.wind,
         geothermal: house.geothermal,
-        userid: id
+        userid: house.userid
       })
     };
 }
 
-export const vehicleOptions = (vehicle, id) => {
+export const vehicleOptions = (vehicle) => {
     return {
       method: "POST",
       headers: {
@@ -43,7 +43,7 @@ export const vehicleOptions = (vehicle, id) => {
         year: vehicle.year,
         fuel: vehicle.fuel,
         mpg: vehicle.mpg,
-        userid: id
+        userid: vehicle.userid
       })
     };
 }
@@ -53,8 +53,8 @@ export const authHeader = () => {
 }
 
 export const logIn = (response) => {
-    localStorage.setItem("footprintsJWT", response.tokenString)
-    return response.userFromRepo
+    // localStorage.setItem("footprintsJWT", response.tokenString) //for future edit capabilities
+    return response.id
 }
 
 export const fetchDirectLineToken = async () => {

@@ -26,7 +26,7 @@ function AddVehicle({ next, addVehicle, user }) {
       year,
       fuel,
       mpg,
-      userid: 1
+      userid: user
     }
     addVehicle(vehicle)
     resetForm()
@@ -34,53 +34,46 @@ function AddVehicle({ next, addVehicle, user }) {
 
   return (
     <div>
-      {/* <h4>Vehicles</h4>
+      <h4>Vehicles</h4>
       <form onSubmit={event => handleSubmit(event)} className="form">
-        <label htmlFor="location">Location:</label>
+        <label htmlFor="make">Make:</label>
         <input
           type="text"
-          id="location"
-          placeholder="Denver, CO, United States"
-          value={location}
-          onChange={e => setLocation(e.target.value)}
+          id="make"
+          placeholder="Toyota"
+          value={make}
+          onChange={e => setMake(e.target.value)}
         />
-        <label htmlFor="squarefootage">SquareFootage:</label>
+        <label htmlFor="model">Model:</label>
         <input
           type="text"
-          id="squarefootage"
-          value={squareFootage}
-          onChange={e => setSquareFootage(e.target.value)}
+          id="model"
+          value={model}
+          onChange={e => setModel(e.target.value)}
         />
-        <label htmlFor="food">Primary food source:</label>
+        <label htmlFor="year">Year:</label>
         <input
           type="text"
-          id="food"
-          value={food}
-          onChange={e => setFood(e.target.value)}
+          id="year"
+          value={year}
+          onChange={e => setYear(e.target.value)}
         />
-        <label htmlFor="solar">Solar:</label>
+        <label htmlFor="fuel">Fuel:</label>
         <input
-          type="checkbox"
-          id="solar"
-          checked={solar}
-          onChange={e => setSolar(!solar)}
+          type="text"
+          id="fuel"
+          value={fuel}
+          onChange={e => setFuel(e.target.value)}
         />
-        <label htmlFor="wind">Wind:</label>
+        <label htmlFor="mpg">Mpg:</label>
         <input
-          type="checkbox"
-          id="wind"
-          checked={wind}
-          onChange={e => setWind(!wind)}
+          type="text"
+          id="mpg"
+          value={mpg}
+          onChange={e => setMpg(e.target.value)}
         />
-        <label htmlFor="geothermal">Geothermal:</label>
-        <input
-          type="checkbox"
-          id="geothermal"
-          checked={geothermal}
-          onChange={e => setGeothermal(!geothermal)}
-        />
-        <button type="submit">Add House</button>
-      </form> */}
+        <button type="submit">Add Vehicle</button>
+      </form>
       <button onClick={next}>Next</button>
     </div>
   );

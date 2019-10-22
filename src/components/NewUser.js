@@ -4,13 +4,13 @@ import { connect } from "react-redux";
 import { userActions } from "../actions";
 
 function NewUser({next, signUp}) {
-    const [name, setName] = useState("");
+    const [username, setName] = useState("");
     const [password, setPassword] = useState("");
 
     const handleSubmit = event => {
     event.preventDefault();
     let user = { 
-      name,
+      username,
       password
     };
     signUp(user);
@@ -24,7 +24,7 @@ function NewUser({next, signUp}) {
           <input
             type="text"
             id="username"
-            value={name}
+            value={username}
             onChange={e => setName(e.target.value)}
           />
           <label htmlFor="password">Password:</label>

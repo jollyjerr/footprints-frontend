@@ -29,7 +29,7 @@ function AddHouse({next, addHouse, user}) {
           solar,
           wind,
           geothermal,
-          userid: 1
+          userid: user
         }
         addHouse(house)
         resetForm()
