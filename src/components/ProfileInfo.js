@@ -3,9 +3,9 @@ import React from 'react'
 export default function ProfileInfo({houses, vehicles}) {
 
     const renderHouses = () => (
-        houses.map(house => (
+        houses.map(house => ( 
             <div className="icon" >
-                <p>🏠{house.location}</p>
+                <p>🏠{house.location}</p> 
             </div>
         ))
     )
