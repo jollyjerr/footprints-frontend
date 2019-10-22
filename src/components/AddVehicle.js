@@ -72,8 +72,8 @@ function AddVehicle({ next, addVehicle, user }) {
           onChange={e => setMpg(e.target.value)}
         />
         <button type="submit">Add Vehicle</button>
+        <button id="next" onClick={next}>Next</button>
       </form>
-      <button onClick={next}>Next</button>
     </div>
   );
 }

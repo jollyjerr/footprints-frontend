@@ -52,7 +52,7 @@
         border-radius: 4px;
         box-sizing: border-box;
     }
-    input:focus {
+    input[type=text]:focus {
         -moz-box-shadow: 0 0 8px $calm;
         -webkit-box-shadow: 0 0 8px $calm;
         box-shadow: 0 0 8px $calm;
@@ -65,4 +65,18 @@
         color: $title;
         cursor: pointer;
     }
+    button:hover {
+        transition-duration: 0.6s;
+        background-color: $calm;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+#next {
+    background: $positive;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: $title;
+    cursor: pointer;
+    float: right;
 }

@@ -82,8 +82,8 @@ function AddHouse({next, addHouse, user}) {
             onChange={e => setGeothermal(!geothermal)}
           />
           <button type="submit">Add House</button>
+          <button id="next" onClick={next}>Next</button>
         </form>
-        <button onClick={next}>Next</button>
       </div>
     );
 }

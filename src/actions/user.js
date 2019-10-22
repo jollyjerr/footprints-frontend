@@ -14,12 +14,14 @@ const userRequest = (user, endpoint, dispatch) => {
 const addHouse = (house, dispatch) => {
     fetch(`${helpers.apiURL}/house/register`, helpers.houseOptions(house))
       .then(resp => resp.json())
+      .then(console.log)
       .catch(alert);
 }
 
 const addVehicle = (vehicle, dispatch) => {
     fetch(`${helpers.apiURL}/vehicle/register`, helpers.vehicleOptions(vehicle))
     .then(resp => resp.json())
+    .then(console.log)
     .catch(alert)
 }
 
