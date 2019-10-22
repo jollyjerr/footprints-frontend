@@ -1,5 +1,5 @@
 import * as helpers from '../helpers'
-import { SUCCESS } from './types'
+import { SUCCESS, ADDHOUSE, ADDVEHICLE } from './types'
 
 const userRequest = (user, endpoint, dispatch) => {
     fetch(`${helpers.apiURL}/${endpoint}`, helpers.userOptions(user))
@@ -14,15 +14,19 @@ const userRequest = (user, endpoint, dispatch) => {
 const addHouse = (house, dispatch) => {
     fetch(`${helpers.apiURL}/house/register`, helpers.houseOptions(house))
       .then(resp => resp.json())
-      .then(console.log)
-      .catch(alert);
+      .catch(alert)
+      .then(house => {
+          dispatch({type: ADDHOUSE, house: house})
+      })
 }
 
 const addVehicle = (vehicle, dispatch) => {
     fetch(`${helpers.apiURL}/vehicle/register`, helpers.vehicleOptions(vehicle))
     .then(resp => resp.json())
-    .then(console.log)
     .catch(alert)
+    .then(vehicle => {
+        dispatch({type:ADDVEHICLE, vehicle})
+    })
 }
 
 export const userActions = {
