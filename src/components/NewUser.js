@@ -19,7 +19,6 @@ function NewUser({next, signUp}) {
 
     return (
       <div className="form-container">
-        <h1>Hello!</h1>
         <form onSubmit={event => handleSubmit(event)} className="form">
           <label htmlFor="username">Username:</label>
           <input

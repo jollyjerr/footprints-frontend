@@ -8,7 +8,7 @@ import NewUser from '../components/NewUser'
 import AddVehicle from '../components/AddVehicle'
 import AddHouse from '../components/AddHouse'
 
-function SignUpContainer(props) {
+function SignUpContainer({user}) {
   const [waterfallSignup, incrementWaterfallSignup] = useState(1)
 
   const next = () => {
@@ -20,9 +20,9 @@ function SignUpContainer(props) {
       case 1:
         return <NewUser next={next} />
       case 2:
-        return <AddHouse next={next} />
+        return <AddHouse next={next} user={user} />
       case 3:
-        return <AddVehicle next={next} />
+        return <AddVehicle next={next} user={user} />
       case 4:
         return <Redirect to="/chat" />
       default:
@@ -32,6 +32,7 @@ function SignUpContainer(props) {
 
     return (
         <div className="signup-container" >
+        <h1>Hello! Create an account here.</h1>
           {renderStep()}
         </div>
     )
