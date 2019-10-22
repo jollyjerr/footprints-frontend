@@ -7,8 +7,9 @@ import '../styles/signup-container.scss'
 import NewUser from '../components/NewUser'
 import AddVehicle from '../components/AddVehicle'
 import AddHouse from '../components/AddHouse'
+import ProfileInfo from '../components/ProfileInfo'
 
-function SignUpContainer({user}) {
+function SignUpContainer({user, houses, vehicles}) {
   const [waterfallSignup, incrementWaterfallSignup] = useState(1)
 
   const next = () => {
@@ -32,15 +33,18 @@ function SignUpContainer({user}) {
 
     return (
         <div className="signup-container" >
-        <h1>Hello! Create an account here.</h1>
+          <h1>Hello! Create an account here.</h1>
           {renderStep()}
+          <ProfileInfo vehicles={vehicles} houses={houses} />
         </div>
     )
 }
 
-const mapStateToProps = ({ user }) => {
+const mapStateToProps = ({ user, vehicles, houses }) => {
   return {
-    user
+    user,
+    houses,
+    vehicles
   }
 }
 

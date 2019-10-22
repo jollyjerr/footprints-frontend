@@ -82,4 +82,5 @@ const mapDispatchToProps = dispatch => ({
   addVehicle: house => userActions.addVehicle(house, dispatch)
 });
 
+
 export default connect(null, mapDispatchToProps)(AddVehicle)
