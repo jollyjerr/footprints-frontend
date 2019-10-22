@@ -25,6 +25,8 @@ function SignUpContainer(props) {
         return <AddVehicle next={next} />
       case 4:
         return <Redirect to="/chat" />
+      default:
+        return <Redirect to="/" />
     }
   }
 

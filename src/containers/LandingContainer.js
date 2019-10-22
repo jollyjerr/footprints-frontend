@@ -17,6 +17,7 @@ function LandingContainer() {
                     <button className="chat-button" >Chat!</button> 
                 </Link>
             </div>
+            <p>Info on where footprint can be used</p>
         </div>
     )
 }

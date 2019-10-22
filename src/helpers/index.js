@@ -13,6 +13,24 @@ export const userOptions = (user) => {
     }
 }
 
+export const houseOptions = (house, id) => {
+    return {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        location: house.location,
+        squarefootage: house.squarefootage,
+        food: house.food,
+        solar: house.solar,
+        wind: house.wind,
+        geothermal: house.geothermal,
+        userid: id
+      })
+    };
+}
+
 export const vehicleOptions = (vehicle, id) => {
     return {
       method: "POST",

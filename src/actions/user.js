@@ -11,7 +11,13 @@ const userRequest = (user, endpoint, dispatch) => {
     })
 }
 
-const addVehicle = (vehicle) => {
+const addHouse = (house, dispatch) => {
+    fetch(`${helpers.apiURL}/house/register`, helpers.houseOptions(house))
+      .then(resp => resp.json())
+      .catch(alert);
+}
+
+const addVehicle = (vehicle, dispatch) => {
     fetch(`${helpers.apiURL}/vehicle/register`, helpers.vehicleOptions(vehicle))
     .then(resp => resp.json())
     .catch(alert)
@@ -19,5 +25,6 @@ const addVehicle = (vehicle) => {
 
 export const userActions = {
     userRequest,
+    addHouse,
     addVehicle
 }
