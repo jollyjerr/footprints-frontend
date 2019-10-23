@@ -34,12 +34,13 @@ function AddVehicle({ next, addVehicle, user }) {
 
   return (
     <div>
+      <h2>What vehicles do you own?</h2>
       <form onSubmit={event => handleSubmit(event)} className="form">
         <label htmlFor="make">Make:</label>
         <input
           type="text"
           id="make"
-          placeholder="Toyota"
+          placeholder="Subaru"
           value={make}
           onChange={e => setMake(e.target.value)}
         />
@@ -47,27 +48,31 @@ function AddVehicle({ next, addVehicle, user }) {
         <input
           type="text"
           id="model"
+          placeholder="Outback"
           value={model}
           onChange={e => setModel(e.target.value)}
         />
         <label htmlFor="year">Year:</label>
         <input
-          type="text"
+          type="number"
           id="year"
+          placeholder="2005"
           value={year}
           onChange={e => setYear(e.target.value)}
         />
-        <label htmlFor="fuel">Fuel:</label>
+        <label htmlFor="fuel">Fuel source:</label>
         <input
           type="text"
           id="fuel"
+          placeholder="Gasoline"
           value={fuel}
           onChange={e => setFuel(e.target.value)}
         />
         <label htmlFor="mpg">Mpg:</label>
         <input
-          type="text"
+          type="number"
           id="mpg"
+          placeholder="28"
           value={mpg}
           onChange={e => setMpg(e.target.value)}
         />

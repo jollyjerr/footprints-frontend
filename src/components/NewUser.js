@@ -19,19 +19,23 @@ function NewUser({next, signUp}) {
 
     return (
       <div className="form-container">
+      <h2>Who are you?</h2>
+        {/* <button onClick={next} >DEBUGGER NEXT</button>  */}
         <form onSubmit={event => handleSubmit(event)} className="form">
           <label htmlFor="username">Username:</label>
           <input
             type="text"
             id="username"
             value={username}
+            required
             onChange={e => setName(e.target.value)}
           />
           <label htmlFor="password">Password:</label>
           <input
-            type="text"
+            type="password"
             id="password"
             value={password}
+            required
             onChange={e => setPassword(e.target.value)}
           />
           <button type="submit">Create Account</button>

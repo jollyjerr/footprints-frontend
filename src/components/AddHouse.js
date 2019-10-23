@@ -5,7 +5,7 @@ import { userActions } from "../actions";
 
 function AddHouse({next, addHouse, user}) {
     const [location, setLocation] = useState("");
-    const [squareFootage, setSquareFootage] = useState("");
+    const [squarefootage, setSquarefootage] = useState("");
     const [food, setFood] = useState("");
     const [solar, setSolar] = useState(false);
     const [wind, setWind] = useState(false);
@@ -13,7 +13,7 @@ function AddHouse({next, addHouse, user}) {
 
     const resetForm = () => {
       setLocation("")
-      setSquareFootage("")
+      setSquarefootage("")
       setFood("")
       setSolar(false)
       setWind(false)
@@ -24,7 +24,7 @@ function AddHouse({next, addHouse, user}) {
         event.preventDefault()
         let house = {
           location,
-          squareFootage,
+          squarefootage,
           food,
           solar,
           wind,
@@ -37,6 +37,7 @@ function AddHouse({next, addHouse, user}) {
 
     return (
       <div>
+        <h2>What buildings do you own?</h2>
         <form onSubmit={event => handleSubmit(event)} className="form">
           <label htmlFor="location">Location:</label>
           <input
@@ -48,15 +49,17 @@ function AddHouse({next, addHouse, user}) {
           />
           <label htmlFor="squarefootage">SquareFootage:</label>
           <input
-            type="text"
+            type="number"
             id="squarefootage"
-            value={squareFootage}
-            onChange={e => setSquareFootage(e.target.value)}
+            placeholder="2000"
+            value={squarefootage}
+            onChange={e => setSquarefootage(e.target.value)}
           />
           <label htmlFor="food">Primary food source:</label>
           <input
             type="text"
             id="food"
+            placeholder="Personal Garden"
             value={food}
             onChange={e => setFood(e.target.value)}
           />
