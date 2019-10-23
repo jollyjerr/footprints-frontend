@@ -44,6 +44,7 @@ function AddHouse({next, addHouse, user}) {
             type="text"
             id="location"
             placeholder="Denver, CO, United States"
+            required
             value={location}
             onChange={e => setLocation(e.target.value)}
           />
@@ -52,6 +53,7 @@ function AddHouse({next, addHouse, user}) {
             type="number"
             id="squarefootage"
             placeholder="2000"
+            required
             value={squarefootage}
             onChange={e => setSquarefootage(e.target.value)}
           />
@@ -60,6 +62,7 @@ function AddHouse({next, addHouse, user}) {
             type="text"
             id="food"
             placeholder="Personal Garden"
+            required
             value={food}
             onChange={e => setFood(e.target.value)}
           />

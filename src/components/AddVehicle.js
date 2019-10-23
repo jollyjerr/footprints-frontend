@@ -41,6 +41,7 @@ function AddVehicle({ next, addVehicle, user }) {
           type="text"
           id="make"
           placeholder="Subaru"
+          required
           value={make}
           onChange={e => setMake(e.target.value)}
         />
@@ -49,6 +50,7 @@ function AddVehicle({ next, addVehicle, user }) {
           type="text"
           id="model"
           placeholder="Outback"
+          required
           value={model}
           onChange={e => setModel(e.target.value)}
         />
@@ -57,6 +59,7 @@ function AddVehicle({ next, addVehicle, user }) {
           type="number"
           id="year"
           placeholder="2005"
+          required
           value={year}
           onChange={e => setYear(e.target.value)}
         />
@@ -65,6 +68,7 @@ function AddVehicle({ next, addVehicle, user }) {
           type="text"
           id="fuel"
           placeholder="Gasoline"
+          required
           value={fuel}
           onChange={e => setFuel(e.target.value)}
         />
@@ -73,6 +77,7 @@ function AddVehicle({ next, addVehicle, user }) {
           type="number"
           id="mpg"
           placeholder="28"
+          required
           value={mpg}
           onChange={e => setMpg(e.target.value)}
         />

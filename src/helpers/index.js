@@ -54,7 +54,7 @@ export const authHeader = () => {
 
 export const logIn = (response) => {
     // localStorage.setItem("footprintsJWT", response.tokenString) //for future edit capabilities
-    return response.id
+    return response.id ? response.id : 404 //error user
 }
 
 export const fetchDirectLineToken = async () => {
