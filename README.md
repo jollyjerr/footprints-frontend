@@ -2,7 +2,7 @@
 *A personalized eco friendly chatbot*
 ![homescreen](https://github.com/jollyjerr/footprints-backend/blob/master/github/homepage.png)
 
-footprint is a digital assistant to help users make sustainable decisions. You can save information about yourself - such as vehicles, homes, and diet - and footprint will reccomend lifestyle choices that reduce your enviormental impact! 
+footprint is a digital assistant to help users make sustainable decisions. You can save information about yourself - such as vehicles, homes, and diet - and footprint will reccomend lifestyle choices that reduce your environmental impact! 
 
 Users can also ask common questions such as "Can I recycle this #4 plastic?" and footprint will provide quick answers. If you want to talk about anything else, footprint is also a witty conversationalist! 
 
